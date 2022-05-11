@@ -12,4 +12,6 @@ then
     exit 1
 fi
 
+echo "Trigger scan for api : $ESCAPE_API_KEY"
+
 curl -fLs "https://api.escape.tech/application-environments/start-scan/${ESCAPE_SCAN_ID}?api_key=${ESCAPE_API_KEY}"
