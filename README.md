@@ -21,7 +21,6 @@ jobs:
     - name: Trigger refresh
       uses:  Escape-Technologies/escape-trigger-refresh@main
       with:
-        args:
-          scan_id: ${ESCAPE_SCAN_ID}
-          api_key: ${ESCAPE_API_KEY}
+        scan_id: ${ESCAPE_SCAN_ID}
+        api_key: ${ESCAPE_API_KEY}
 ```
