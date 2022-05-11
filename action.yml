@@ -1,0 +1,23 @@
+---
+name: 'Escape trigger refresh'
+
+description: 'Restart a scan on escape.tech'
+
+inputs:
+  scan_id:
+    description: 'The id of your application'
+    required: true
+  api_key:
+    description: 'Your api key'
+    required: true
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.scan_id }}
+    - ${{ inputs.api_key }}
+
+branding:
+  icon: 'check'  
+  color: 'white'
