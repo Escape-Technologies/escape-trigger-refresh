@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Trigger refresh
-        uses: Escape-Technologies/escape-trigger-refresh@v2
+        uses: Escape-Technologies/escape-trigger-refresh@main
         with:
           environment_id: ${{ secrets.ESCAPE_ENVIRONMENT_ID }}
           api_key: ${{ secrets.ESCAPE_API_KEY }}
