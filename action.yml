@@ -4,7 +4,7 @@ name: 'Escape trigger refresh'
 description: 'Restart a scan on escape.tech'
 
 inputs:
-  scan_id:
+  environment_id:
     description: 'The id of your application'
     required: true
   api_key:
@@ -15,7 +15,7 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.scan_id }}
+    - ${{ inputs.environment_id }}
     - ${{ inputs.api_key }}
 
 branding:
